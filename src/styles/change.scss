@@ -1,0 +1,110 @@
+.change-container {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+
+  .header {
+        width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+        
+
+        h3 {
+            font-size: 15px;
+            text-align: center;
+            color: rgb(105, 105, 105);
+        }
+
+        p {
+            position: relative;
+            display: flex;
+            color: black;
+            font-size: small;
+            font-style: italic;
+            margin: 0px;
+            margin-top: 10px;
+            padding: 10px 10px;
+            background-color: rgb(255, 255, 112);
+            border-radius: 3px;
+            width: 100%;
+            max-width: 500px;
+            min-width: 380px;
+           
+
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+align-items: center;
+            width: 100%;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 50px;
+                width: 100%;
+                label{
+                    font-weight: 400;
+                }
+                
+            }
+
+            input {
+                padding: 10px 10px;
+                border-radius: 3px;
+                border: 1px solid rgb(105, 105, 105);
+                font-size: 12px;
+                max-width: 300px;
+                min-width: 280px;
+                &:focus {
+                    outline: none;
+                    border-color: rgb(31, 162, 255);;
+                }
+                
+
+            }
+        }
+
+        .login-btn {
+            background-color: green;
+            max-width: 500px;
+            margin-top: 20px;
+            padding: 10px 10px;
+            border-radius: 3px;
+            border: none;
+            color: white;
+        }
+
+    }
+
+    .forget {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        font-weight: 300;
+        font-size: small;
+
+        a {
+
+            font-style: italic;
+        }
+    }
+}

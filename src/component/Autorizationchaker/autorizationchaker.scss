@@ -1,0 +1,72 @@
+.autorizationchaker{
+    position: fixed;
+    top: 80px;
+    height:calc( 100vh - 134px);
+    width: 100vw;
+    left: 0%;
+    background-color:rgb(0, 0, 0,0.8);
+    display: flex;
+    z-index: 2222;
+ 
+    align-items: center;
+    justify-content: center;
+
+    .conatiner{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+      
+        align-items: center;
+        gap: 20px;
+        h2{
+            text-align: center;
+            font-size: 18px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .item{
+                display: flex;
+              justify-content: space-between;
+              align-items: center;
+                gap: 15px;
+                p{
+                    height: 30px;
+                    width: 100%;
+                    padding: 5px 20px;
+                    border-radius: 2px;
+                    background-color: rgb(160, 73, 90);
+                    color: white;
+                }
+                input{
+                    height: 30px;
+                    padding: 5px 20px;
+                    border-radius: 2px;
+                    border: none;
+                    outline: 1px solid rgb(84, 84, 84) ;
+                    &:focus{
+                        outline: 1px solid rgb(63, 185, 251);
+                    }
+                }
+            }
+        }
+        .btn{
+            background-color: green;
+            color: white;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+            padding: 6px 15px;
+            font-weight: 700;
+            width: 150px;
+            text-transform: capitalize;
+            display: flex;
+    
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.singleReuest {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+
+    .requestInfo {
+
+        color: #000000;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        border: 1px solid;
+        border-radius: 5px;
+
+        .indentityInfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: fit-content;
+            justify-content: center;
+
+            .item {
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                gap: 10px;
+
+
+                span {
+                    display: flex;
+                    position: relative;
+                    justify-content: flex-start;
+
+
+
+
+                    &:first-child {
+                        font-weight: bold;
+                        width: max-content;
+                    }
+
+
+                }
+
+            }
+        }
+
+        .reason {
+            display: flex;
+            width: 50%;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px 30px;
+            border: 1px solid;
+            border-radius: 5px;
+            gap: 10px;
+
+            span {
+                font-weight: bold;
+            }
+
+            p {
+                text-indent: 30px;
+                font-size: small;
+            }
+        }
+    }
+
+    .requestedItems {
+        position: relative;
+        max-width: 100%;
+        padding: 5px;
+        
+        background-color: aquamarine;
+
+        span {
+            font-weight: bold;
+            min-width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .table {
+            max-width: 100%;
+            background-color: white;
+        }
+    }
+
+    .totalDatas {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+
+        span {
+            width: 30%;
+        }
+    }
+
+    .btns {
+    width: 50%;
+        display: flex;
+       gap: 50px;
+        display: flex;
+        // left: 50%;
+        // transform: translateX(-50%);
+        justify-content: space-between;
+        .btn {
+
+            position: relative;
+            background-color: green;
+            color: white;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+            padding: 6px 15px;
+            font-weight: 700;
+            width: 150px;
+            text-transform: capitalize;
+            display: flex;
+            // left: 50%;
+            // transform: translateX(-50%);
+            align-items: center;
+            justify-content: center;
+&:nth-child(2){
+    background-color: #000000;
+}
+        }
+    }
+
+.viewBtn{
+    background-color: black;
+    border-radius: 4px;
+    padding: 2px 10px;
+    color: white;
+}
+.css-128fb87-MuiDataGrid-toolbarContainer{
+    display: flex;
+    justify-content: space-between;
+}
+}
+

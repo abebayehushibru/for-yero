@@ -1,0 +1,50 @@
+.PageConatainer{
+ 
+    padding-top: 5px;
+    padding-left: 5px;
+    height: calc(100% - 10px);
+          .PageConatainer-info{
+              display: flex;
+              gap: 30px;
+             margin-bottom: 10px;
+              h1{
+                  font-size: 18px;
+                  font-weight: 600;
+              }
+              .button{
+                  background-color: green;
+                  border: none;
+                  color: white;
+                  cursor: pointer;
+                  border-radius: 5px;
+                  padding: 5px 10px;
+                 
+              }
+              .date{
+                  display: flex;
+                  gap: 40px;
+                  input{
+                      padding: 0px 6px;
+                  }
+              }
+  
+          }
+          .btn{
+  padding: 5px 10px;
+  width: 90px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+  color: white;
+          }
+      .stockBtn{
+          border-radius: 5px;
+          border: none;
+          padding: 5px 10px;
+          color: white;
+          width: 100%;
+      }
+
+     
+      
+  }

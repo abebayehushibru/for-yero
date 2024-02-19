@@ -1,0 +1,214 @@
+.AddIncomming {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+
+
+    span {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .persons {
+        width: 100%;
+        padding: 0px 40px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:600px){
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .person {
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           gap: 7px;
+            span{
+             
+                font-size: 14px;
+                margin-bottom: 10px;
+                font-style: italic;
+                font-weight: bold;
+                &::before{
+                    content: "";
+                   margin-right: 20px;
+                }
+                
+            }
+            .items{
+               
+                display: flex;
+                gap: 10px;
+                justify-content: space-between;
+                label{
+                    font-weight: 400;
+                }
+                input,select{
+                    padding: 5px 20px;
+                    border-radius: 2px;
+                    border: none;
+                    outline: 1px solid rgb(84, 84, 84) ;
+                    &:focus{
+                        outline: 1px solid rgb(63, 185, 251);
+                    }
+                }
+            }
+        }
+    }
+    .addform {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+       
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+
+            .items {
+                display: flex;
+                flex-direction: column;
+                width: 150px;
+                gap: 5px;
+
+
+
+                select {
+                    outline: none;
+                    padding: 5px 10px;
+
+                    option {
+                        border-radius: none;
+                    }
+                }
+
+                textarea {
+                    outline: none;
+                    padding: 6px 10px;
+                }
+            }
+
+        }
+
+        .addBtn {
+          
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: rgb(69, 69, 69);
+            color: white;
+            padding: 5px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: baseline;
+
+            &:active {
+                background-color: black;
+            }
+        }
+
+    }
+    .table {
+
+        display: flex;
+        flex-direction: column;
+         width:100%;
+         overflow: auto;
+         justify-content: center;
+         align-items: center;
+
+        .div {
+             width: fit-content;
+             position: relative;
+            
+
+             .dataGrid {
+                 width: 100%;
+                 position: relative;
+                 
+             }
+         }
+         .total{
+            margin-top: 10px;
+            width:100%;
+            padding-right: 20%;
+            display: flex;
+              
+                justify-content: flex-end;
+            .totalDatas{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                gap: 10px;
+    
+            span{
+                min-width:150px;
+                float: right;
+                display: flex;
+                justify-content: flex-start;
+                 input{
+                    width: 60px;
+                }
+            }
+            
+               
+               }
+         }
+
+        .MuiDataGrid-virtualScroller {
+            overflow-x: hidden;
+            min-height: 35px;
+        }
+       
+    }
+    .description_and_Button{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+       div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+       
+        .savebtn{
+            background-color: green;
+            color: white;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+            padding: 6px 15px;
+            font-weight: 700;
+            width: 150px;
+            text-transform: capitalize;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            &:focus{
+                outline: none;
+            }
+        }
+       }
+
+        
+    }
+
+    @media screen and (max-width:900px){
+        overflow: scroll;
+       }
+
+}

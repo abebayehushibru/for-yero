@@ -1,0 +1,22 @@
+.unit{
+  
+    .unit-info{
+        display: flex;
+        gap: 30px;
+        margin: 20px 0px;
+        h1{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        button{
+            background-color: green;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 5px 10px;
+            box-shadow: 1px 1px 3px green;
+        }
+    }
+
+}

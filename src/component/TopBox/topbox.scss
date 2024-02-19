@@ -1,0 +1,52 @@
+.topBox{
+    h1{
+        margin-bottom: 10px;
+        color: rgb(0, 0, 0,0.7);
+    font-size: 18px;}
+        .list{
+            .listItems{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                color: rgb(57, 57, 57);
+               
+                 .product{
+                    display: flex;
+                    gap: 20px;
+                    img{
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        background-color: black;
+                        box-shadow: 1px .2px 1px rgb(97, 97, 97);
+                    }
+                    .productText{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        span{
+                            &:first-child{
+                                font-size: 14px;
+                                font-weight: 500;
+                                text-transform: capitalize;
+                            }
+                            &:last-child{
+                                font-size: 11px;
+                            }
+
+                        }
+                    }
+                    
+                }
+                .amount{
+                    font-size: 13px;
+                   font-weight: 600;
+                    
+                }
+            }
+        }
+    
+
+}

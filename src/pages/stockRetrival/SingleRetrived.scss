@@ -1,0 +1,138 @@
+.singleReuest {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .requestInfo {
+
+        color: #000000;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        border: 1px solid;
+        border-radius: 5px;
+        flex-wrap: wrap;
+        background-color: white;
+
+        .indentityInfo {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: fit-content;
+            background-color: white;
+            justify-content: center;
+            text-transform: capitalize;
+            &>span {
+                font-style: italic;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+
+
+            .item {
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                background-color: white;
+                gap: 10px;
+                padding-left: 10px;
+
+
+                span {
+                    display: flex;
+                    position: relative;
+                    justify-content: flex-start;
+
+
+
+
+                    &:first-child {
+                        font-weight: 500;
+                        width: max-content;
+                    }
+
+
+                }
+
+            }
+
+           
+        }
+
+      
+
+    }
+    .retriver .indentityInfo:first-child {
+        flex-direction: row;
+        width: 100%;
+
+        &>span {
+            font-style: italic;
+            text-decoration: underline;
+            font-weight: bold;
+         
+            width: 200px;
+        }
+
+        .item {
+            width: auto;
+            span:nth-child(2){
+                font-weight: bold;
+
+            }
+        }
+    }
+    .requestedItems {
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-weight: bold;
+            min-width: 100%;
+            text-align: center;
+        }
+
+        .table {
+            background-color: white;
+        
+        }
+    }
+
+    .totalDatas {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+
+        span {
+            width: 30%;
+        }
+    }
+
+    .btn {
+
+        position: relative;
+        background-color: green;
+        color: white;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        padding: 6px 15px;
+        font-weight: 700;
+        width: 150px;
+        text-transform: capitalize;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        justify-content: center;
+
+    }
+}

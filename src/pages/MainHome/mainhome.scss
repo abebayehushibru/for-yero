@@ -1,0 +1,108 @@
+.mainHome {
+    background-color: rgb(255, 255, 255);
+padding-bottom: 30px;
+    .mainMenuContent {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        height: 100%;
+        overflow: auto;
+
+        .info {
+            flex: 1;
+            padding-left: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+            h2 {
+                width: 100%;
+                font-weight: 900;
+                padding-left: 20px;
+                font-size: 45px;
+                text-transform: uppercase;
+                -webkit-text-stroke: 2px rgb(43, 160, 72,0.7);
+                text-shadow: 1px 3px 1px #2BA048;
+                &::first-letter{
+                    font-size: 65px;
+                }
+               
+
+
+
+                letter-spacing: 2px;
+                color: transparent;
+
+            }
+
+            span {
+                width: 100%;
+                padding-left: 20px;
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+
+                color: #484848;
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 18px;
+                color: rgb(104, 104, 104);
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .btn {
+                background-color: #2BA048;
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-size: 18px;
+                border-radius: 5px;
+                width: 150px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 10px;
+                font-weight: 600;
+                margin-top: 20px;
+
+            }
+        }
+
+        .image {
+            position: relative;
+            flex: 1;
+            min-height: 100%;
+            background-color: #2BA048;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;
+            padding: 15px 15px;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: bold;
+            color: white;
+            z-index: 0;
+            border-radius: 10px;
+            img {
+
+                height: 350px;
+                width: 100%;
+                box-shadow: 1px 2px 3px rgb(142, 142, 142);
+                border-radius: 10px;
+                z-index: 1;
+            }
+        }
+        @media screen and (max-width:700px){
+
+           flex-direction: column-reverse;
+
+           img {
+            z-index: 0;
+           }
+    }
+    }
+}

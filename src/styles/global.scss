@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,68 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+.main{
+  font-family: "Inter",sans-serif;
+ 
+}
+.container{
+  display: flex;
+ padding-top:5px;
+ padding-bottom: 5px;
+height: calc(100vh - 133px);
+  background-color: rgb(225, 225, 225);
+  overflow: auto;
+
+}
+.mainHome{
+ min-height: 100%;
+  
+}
+.notLogged{
+  background-color: white;
+  position: relative;
+  // min-width: 100%;
+  width: 100% ;
+
+  min-height: 100%;
+  height: fit-content;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width:600px){
+  //  width: 100%;
+}
+ 
+}
+.menuContainer{
+
+  width: 250px;
+  padding: 5px 20px ;
+ background-color:  white;
+ margin-right: 10px;
+ min-height: 100%;
+ overflow-y: auto;
+
+color: black;
+}
+.contentConatiner{
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  background-color: rgb(255, 252, 202);
+  overflow: auto;
+  color: black;
+   padding: 10px 10px ;
+
+   .MuiDataGrid-columnHeaderTitle{
+    font-weight: bold;
+   }
+   .MuiDataGrid-virtualScroller {
+    overflow-x: hidden;
+    min-height: 35px;
+}
+
 }

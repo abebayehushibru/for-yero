@@ -1,0 +1,174 @@
+
+
+.contactform {
+    position: relative;
+    top: 0%;
+    background-color: rgb(0, 0, 0, 0.8);
+    left: 0%;
+    width: 100%;
+ 
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    z-index: 999;
+   // background-color: #01959a;
+}
+
+
+.contactContainer {
+    position: relative;
+  
+    width: calc(100% - 12rem);
+    height: calc(100% - 5rem);
+
+}
+
+.contactContainer h3 {
+    padding: 0 0 1rem;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.formheader {
+    position: relative;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    
+}
+
+
+
+
+ .formcomponent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    max-width: 600px;
+  
+    
+    background-color: #ffffff;
+    margin-top: 0%;
+   div {
+        position: relative;
+        width: 100%;
+        margin: 0%;
+        justify-content: space-around;
+    }
+    
+div:nth-child(1) {
+    display: grid;
+
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+}
+
+ input {
+    outline: 1pX solid rgb(0, 0, 0, 0.1);
+    height: 40px;
+
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    margin: 0%;
+    margin-bottom: 15px;
+
+}
+
+
+div:nth-child(2) {
+    position: relative;
+    width: 100%;
+
+}
+
+div:nth-child(2) input {
+
+    width: calc(100% );
+
+}
+
+ input:focus,
+ textarea:focus {
+    outline: 1px green;
+    outline-style: solid;
+    outline-width: 1px;
+    box-shadow: .5px 1px 3px green;
+
+}
+
+&:has(div input:focus)>p,
+&:has(div textarea:focus)>p {
+    content: "";
+}
+
+ textarea {
+    max-width: calc(100%);
+    min-width: calc(100% );
+    min-height: 100px;
+    max-height: auto;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    margin-bottom: 6px;
+    padding-top: 20px;
+    outline: solid rgb(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width:850px) {
+    .contactContainer {
+        margin: 2rem 2rem;
+        width: calc(100% - 4rem);
+
+    }
+
+   div:nth-child(1) {
+        grid-template-columns: 100%;
+    }
+
+   div {
+
+        max-width: 400px;
+    }
+}
+
+
+.btn {
+    background-color: green;
+    padding: 10px 10px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

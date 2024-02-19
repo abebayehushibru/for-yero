@@ -1,0 +1,44 @@
+.datatable{
+    .dataGrid{
+        background-color: white;
+        padding: 5px 20px;
+        font-size: 14px;
+width: fit-content;
+position: relative;
+max-height: 100%;
+        .MuiInputBase-inputTypeSearch{
+            font-size: 12px;
+        border-bottom-width: 5px;
+        }
+        .MuiDataGrid-toolbarContainer{
+            flex-direction: row-reverse;}
+            img{
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+            }
+           .MuiDataGrid-columnHeaderTitleContainer{
+           
+            justify-content: space-between;
+           div{
+            &:first-child{
+                font-weight: 600;
+            }
+           } 
+           }
+
+            .action{
+                display: flex;
+                justify-content: space-between;
+                img{
+                    height: 15px;
+                    cursor: pointer;
+                }
+            }
+       
+.approved{
+background-color: green;
+}
+
+    }
+}
